@@ -88,3 +88,19 @@
 17. Tener cuidado con la version del driver de Microsoft SQL Server
     De preferencia usar:
     f"DRIVER={{ODBC Driver 11 for SQL Server}};"
+    f"DRIVER={{ODBC Driver 17 for SQL Server}};"
+
+    Ver la relacion de drivers
+    Win + R: odbcad32.exe 
+18. Como revisar si esta funcionando bien?
+    revisar el archivo: envio_xml.log, debe salir algo asì:
+    
+        2025-07-20 12:46:05,487 - INFO - \u23f8\ufe0f No hay comprobantes por enviar. Esperando 10 segundos...
+        2025-07-20 12:46:15,487 - INFO - \U0001f50d Buscando XMLs pendientes...
+        2025-07-20 12:46:15,502 - INFO - \u23f8\ufe0f No hay comprobantes por enviar. Esperando 10 segundos...
+        2025-07-20 12:46:25,503 - INFO - \U0001f50d Buscando XMLs pendientes...
+
+19. Para que el servicio se inicie en automàtico desde power shell
+    >> cmd /c sc config ServicioEnvioXML start= auto
+
+
