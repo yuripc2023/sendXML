@@ -102,5 +102,7 @@
 
 19. Para que el servicio se inicie en automàtico desde power shell
     >> cmd /c sc config ServicioEnvioXML start= auto
-
+20. Ingresar el SQL server y correr el archivo alterview_vw_comprobante.sql (TEC) o 
+    Simplemente agregar el campo en la vista Operacion.SignedStatus (recomendado)
+    
 
