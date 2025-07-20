@@ -1,0 +1,80 @@
+2025-07-19 17:42:17,531 - ERROR - Error al enviar XML vía SOAP: Service has no operation 'sendBill'
+2025-07-19 17:49:20,387 - ERROR - Error al enviar XML vía SOAP: Service has no operation 'sendBill'
+2025-07-19 18:05:08,955 - ERROR - \u274c Error al enviar XML vía SOAP: Service has no operation 'sendBill'
+2025-07-19 18:05:09,089 - INFO - \u2705 XMLResponse actualizado correctamente en la base de datos.
+2025-07-19 18:16:35,053 - ERROR - \u274c Error al enviar XML vía SOAP: 401 Client Error: Unauthorized for url: http://ec2-52-26-118-179.us-west-2.compute.amazonaws.com/invoker21?wsdl
+2025-07-19 18:16:35,107 - INFO - \u2705 XMLResponse actualizado correctamente en la base de datos.
+2025-07-19 18:18:35,340 - ERROR - \u274c Error al enviar XML vía SOAP: 401 Client Error: Unauthorized for url: http://ec2-52-26-118-179.us-west-2.compute.amazonaws.com/invoker21?wsdl
+2025-07-19 18:18:35,518 - INFO - \u2705 XMLResponse actualizado correctamente en la base de datos.
+2025-07-19 18:21:19,222 - ERROR - \u274c Error al enviar XML vía SOAP: 401 Client Error: Unauthorized for url: http://ec2-52-26-118-179.us-west-2.compute.amazonaws.com/invoker21?wsdl
+2025-07-19 18:21:19,274 - INFO - \u2705 XMLResponse actualizado correctamente en la base de datos.
+2025-07-19 18:33:31,792 - ERROR - \u274c Error al enviar XML vía SOAP: 401 Client Error: Unauthorized for url: http://ec2-52-26-118-179.us-west-2.compute.amazonaws.com/invoker21?wsdl
+2025-07-19 18:33:31,867 - INFO - \u2705 XMLResponse actualizado correctamente en la base de datos.
+2025-07-19 18:39:40,017 - ERROR - \u274c Error al enviar XML vía SOAP: 401 Client Error: Unauthorized for url: http://ec2-52-26-118-179.us-west-2.compute.amazonaws.com/invoker21?wsdl
+2025-07-19 18:39:40,085 - INFO - \u2705 XMLResponse actualizado correctamente en la base de datos.
+2025-07-19 18:41:20,556 - INFO - \u2705 Respuesta recibida del SOAP: <?xml version="1.0" encoding="utf-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"><soapenv:Body><ns2:invokeResponse xmlns:ns2="http://ws.ce.ebiz.com/"><return>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;ebizResponse&gt;
+    &lt;genericInvokeResponse&gt;
+        &lt;commonResponse&gt;
+            &lt;summaryResult/&gt;
+            &lt;status&gt;OK&lt;/status&gt;
+            &lt;descriptionStatus&gt;SUCCESFULL&lt;/descriptionStatus&gt;
+        &lt;/commonResponse&gt;
+        &lt;xmlResult&gt;
+            &lt;document&gt;
+                &lt;typeDocument&gt;03&lt;/typeDocument&gt;
+                &lt;idDocument&gt;B001-00000246&lt;/idDocument&gt;
+                &lt;status&gt;SIGNED&lt;/status&gt;
+                &lt;statusDocument&gt;EM_01&lt;/statusDocument&gt;
+                &lt;statusSunat&gt;PE_09&lt;/statusSunat&gt;
+                &lt;declareTime&gt;2025-07-19&lt;/declareTime&gt;
+                &lt;signatureValue&gt;FCQ+lfbDeQytvKBea76V+Ka75wjyZ3rle6wOyPGlzUce+y3WMDxjA5PHRak2/m14/KOvxe/+zXvfmDqqGiFPluCrPzD/OU8h2D+tMKVbjtL3BYLmd8YTKwWs9CHaflFX22lrgiY7lRruBccH+Uqi6361FQ8OyjdQMlTKhUB6xN4JgdwjfOXu8i95k4ipDSbh2Adg38z6hAmyre1a7ppMrwk6annnbyUXZ10tBSKIeory4WbC5rLjrM8n8GWTpONmep+dJDhfxffQdDRGOsor0wfpNLQU1U08BE0hOokc1XbgEzUl8gzaQDzKT6pY8/U6FfweX+htYvj2IOeku71h6g==&lt;/signatureValue&gt;
+                &lt;emisionTime&gt;2025-07-19&lt;/emisionTime&gt;
+                &lt;hashCode&gt;2n1RuBGWpy95tjXVUDNbIeJfBL4=&lt;/hashCode&gt;
+                &lt;pdfFileUrl&gt;http://ec2-52-26-118-179.us-west-2.compute.amazonaws.com/files/x%275A556573616D42526B64706978454C4F42695069317638716B333262375746763346453158456E7A313679564235556665584F6675667275764665777A625753%27&lt;/pdfFileUrl&gt;
+                &lt;xmlFileSignUrl&gt;http://ec2-52-26-118-179.us-west-2.compute.amazonaws.com/files/x%274F7372717353565334492B45384F394C536467385849674E2F7756796F4C52696A5743654D6E67624D3379392F67616C47556E5866414564596E4D4C78456B32%27&lt;/xmlFileSignUrl&gt;
+                &lt;xmlFileSunatUrl&gt;http://ec2-52-26-118-179.us-west-2.compute.amazonaws.com/files/x%276B793753686B6F4B4E79376F6B714A4B4A43676C733346697A575839797A6E486E7A346F4E474A32547A504B65412B4562475A546E526B5A4852336C4C6B3576556F496C397958345945773D%27&lt;/xmlFileSunatUrl&gt;
+                &lt;tipoDocumentoEmisor&gt;6&lt;/tipoDocumentoEmisor&gt;
+                &lt;numeroDocumentoEmisor&gt;20568216190&lt;/numeroDocumentoEmisor&gt;
+                &lt;tipoDocumentoAdquiriente&gt;1&lt;/tipoDocumentoAdquiriente&gt;
+                &lt;numeroDocumentoAdquiriente&gt;00000000&lt;/numeroDocumentoAdquiriente&gt;
+                &lt;adicionales xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+            &lt;/document&gt;
+        &lt;/xmlResult&gt;
+    &lt;/genericInvokeResponse&gt;
+&lt;/ebizResponse&gt;
+</return></ns2:invokeResponse></soapenv:Body></soapenv:Envelope>
+2025-07-19 18:41:20,732 - ERROR - \u274c Error al actualizar XMLResponse: ('22001', '[22001] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Los datos de cadena o binarios se truncarían. (8152) (SQLParamData); [22001] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Se terminó la instrucción. (3621)')
+2025-07-19 18:45:43,992 - INFO - \u2705 Respuesta recibida del SOAP: <?xml version="1.0" encoding="utf-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"><soapenv:Body><ns2:invokeResponse xmlns:ns2="http://ws.ce.ebiz.com/"><return>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;ebizResponse&gt;
+    &lt;genericInvokeResponse&gt;
+        &lt;commonResponse&gt;
+            &lt;summaryResult&gt;
+                &lt;total&gt;1&lt;/total&gt;
+            &lt;/summaryResult&gt;
+            &lt;status&gt;OK&lt;/status&gt;
+            &lt;descriptionStatus&gt;SUCCESFULL&lt;/descriptionStatus&gt;
+        &lt;/commonResponse&gt;
+        &lt;xmlResult&gt;
+            &lt;document&gt;
+                &lt;typeDocument&gt;03&lt;/typeDocument&gt;
+                &lt;idDocument&gt;B001-00000246&lt;/idDocument&gt;
+                &lt;status&gt;ERROR&lt;/status&gt;
+                &lt;emisionTime&gt;2025-07-19&lt;/emisionTime&gt;
+                &lt;messages&gt;
+                    &lt;codeStatus&gt;400&lt;/codeStatus&gt;
+                    &lt;descriptionStatus&gt;Error al firmar&lt;/descriptionStatus&gt;
+                    &lt;codeDetail&gt;7074&lt;/codeDetail&gt;
+                    &lt;descriptionDetail&gt;El documento ya fue firmado&lt;/descriptionDetail&gt;
+                &lt;/messages&gt;
+                &lt;tipoDocumentoEmisor&gt;6&lt;/tipoDocumentoEmisor&gt;
+                &lt;numeroDocumentoEmisor&gt;20568216190&lt;/numeroDocumentoEmisor&gt;
+                &lt;tipoDocumentoAdquiriente&gt;1&lt;/tipoDocumentoAdquiriente&gt;
+                &lt;numeroDocumentoAdquiriente&gt;00000000&lt;/numeroDocumentoAdquiriente&gt;
+                &lt;adicionales xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+            &lt;/document&gt;
+        &lt;/xmlResult&gt;
+    &lt;/genericInvokeResponse&gt;
+&lt;/ebizResponse&gt;
+</return></ns2:invokeResponse></soapenv:Body></soapenv:Envelope>
+2025-07-19 18:45:44,050 - INFO - \u2705 XMLResponse actualizado correctamente en la base de datos.
