@@ -7,6 +7,7 @@ import logging
 from dotenv import load_dotenv
 import os
 import requests
+import time
 
 # Cargar variables desde .env
 load_dotenv()
@@ -29,7 +30,7 @@ logging.basicConfig(
 )
 
 # Obtener XML y datos clave de la BD
-def get_xml_from_db():
+def get_pending_xmls_from_db():
     try:
         conn = pyodbc.connect(
             f"DRIVER={{ODBC Driver 17 for SQL Server}};"
@@ -40,15 +41,14 @@ def get_xml_from_db():
         )
         cursor = conn.cursor()
         cursor.execute("""
-            SELECT TOP 1 OPECOD, EJECOD, MAE_ASOCOD, XMLToSend
+            SELECT OPECOD, EJECOD, MAE_ASOCOD, XMLToSend
             FROM MAEOPE
             WHERE XMLToSend IS NOT NULL AND XMLResponse IS NULL
         """)
-        row = cursor.fetchone()
-        return (row.OPECOD, row.EJECOD, row.MAE_ASOCOD, row.XMLToSend) if row else (None, None, None, None)
+        return cursor.fetchall()
     except Exception as e:
-        logging.error(f"❌ Error al obtener XML de la base de datos: {e}")
-        return (None, None, None, None)
+        logging.error(f"❌ Error al obtener XMLs de la base de datos: {e}")
+        return []
 
 # Enviar XML por SOAP
 def send_xml_to_soap(xml_str):
@@ -115,15 +115,28 @@ def test_conexion_sql():
 # Función principal
 def main():
     test_conexion_sql()
-    print("🔍 Buscando XML a enviar...")
+    
+    while True:
+        print("🔍 Buscando XMLs pendientes...")
+        xml_rows = get_pending_xmls_from_db()
 
-    ope_cod, eje_cod, mae_aso_cod, xml_str = get_xml_from_db()
-    if xml_str:
-        print(f"📦 XML obtenido. Enviando SOAP para OPECOD={ope_cod}, EJECOD={eje_cod}, MAE_ASOCOD={mae_aso_cod}")
-        response = send_xml_to_soap(xml_str)
-        update_response_in_db(ope_cod, eje_cod, mae_aso_cod, response)
-    else:
-        print("⚠️ No hay XML pendiente por enviar.")
+        if not xml_rows:
+            print("⏸️ No hay comprobantes por enviar. Esperando 10 segundos...")
+            time.sleep(10)
+            continue
+
+        for row in xml_rows:
+            ope_cod, eje_cod, mae_aso_cod, xml_str = row
+            print(f"📦 Enviando XML para OPECOD={ope_cod}, EJECOD={eje_cod}, MAE_ASOCOD={mae_aso_cod}")
+            try:
+                response = send_xml_to_soap(xml_str)
+                update_response_in_db(ope_cod, eje_cod, mae_aso_cod, response)
+            except Exception as e:
+                logging.error(f"❌ Fallo al procesar OPECOD={ope_cod}: {e}")
+                continue  # Sigue con el siguiente comprobante
+
+        print("✅ Lote procesado. Esperando 10 segundos antes del siguiente...")
+        time.sleep(10)
 
 # Ejecutar script
 if __name__ == "__main__":

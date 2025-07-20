@@ -2,3 +2,4 @@
 /dist
 .env
 send_xml.spec
+/__pycache__
