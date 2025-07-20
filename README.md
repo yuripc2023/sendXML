@@ -53,6 +53,8 @@
 9.  Clonamos el repositorio
     >> git clone https://github.com/yuripc2023/sendXML.git
     >> cd sendXML
+    Para actualizar los cambios
+    >> git pull
 10.  isntalamos los requerimientos
     >> pip install -r .\requirements.txt
     >> code .
@@ -81,7 +83,8 @@
     >> Get-Service -Name "ServicioEnvioXML"
 15. Matar el servicio, PID se extrae desde administrador de tareas/Servicios = ServicioEnvioXML
     taskkill /PID 15036 /F
-16. Tener cuidado con la version del driver de Microsoft SQL Server
+16. Para eliminar el servicio
+    >> python send_xml_service.py remove
+17. Tener cuidado con la version del driver de Microsoft SQL Server
     De preferencia usar:
     f"DRIVER={{ODBC Driver 11 for SQL Server}};"
-    
