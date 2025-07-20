@@ -1,8 +1,19 @@
+# send_xml_service.py
+
 import win32serviceutil
 import win32service
 import win32event
 import servicemanager
 import time
+import logging
+from logging.handlers import RotatingFileHandler
+from send_xml import main  # ⬅️ Aquí importamos la función principal
+
+logging.basicConfig(
+    filename='envio_xml.log',
+    level=logging.INFO,
+    format='[%(asctime)s] %(message)s'
+)
 
 class PythonWindowsService(win32serviceutil.ServiceFramework):
     _svc_name_ = "ServicioEnvioXML"
@@ -20,15 +31,12 @@ class PythonWindowsService(win32serviceutil.ServiceFramework):
         win32event.SetEvent(self.hWaitStop)
 
     def SvcDoRun(self):
-        servicemanager.LogInfoMsg("Servicio Python Iniciado.")
-        while self.running:
-            try:
-                # Aquí llamas a tu función principal (ej: enviar_xml())
-                print("Ejecutando tarea de envío XML...")
-                time.sleep(10)  # Cambia por la frecuencia deseada
-            except Exception as e:
-                servicemanager.LogErrorMsg(f"Error: {str(e)}")
-            time.sleep(60)  # tiempo entre ejecuciones
+        logging.info("🟢 Servicio iniciado correctamente")
+        try:
+            main()  # 👈 Aquí ejecutamos la lógica del envío
+        except Exception as e:
+            logging.error(f"❌ Error al ejecutar main(): {e}")
+        logging.info("🛑 Servicio detenido")
 
 if __name__ == '__main__':
     win32serviceutil.HandleCommandLine(PythonWindowsService)

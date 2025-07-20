@@ -78,3 +78,69 @@
 &lt;/ebizResponse&gt;
 </return></ns2:invokeResponse></soapenv:Body></soapenv:Envelope>
 2025-07-19 18:45:44,050 - INFO - \u2705 XMLResponse actualizado correctamente en la base de datos.
+2025-07-19 22:36:23,254 - INFO - \u2705 Respuesta recibida del SOAP: <?xml version="1.0" encoding="utf-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"><soapenv:Body><ns2:invokeResponse xmlns:ns2="http://ws.ce.ebiz.com/"><return>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;ebizResponse&gt;
+    &lt;genericInvokeResponse&gt;
+        &lt;commonResponse&gt;
+            &lt;summaryResult/&gt;
+            &lt;status&gt;OK&lt;/status&gt;
+            &lt;descriptionStatus&gt;SUCCESFULL&lt;/descriptionStatus&gt;
+        &lt;/commonResponse&gt;
+        &lt;xmlResult&gt;
+            &lt;document&gt;
+                &lt;typeDocument&gt;03&lt;/typeDocument&gt;
+                &lt;idDocument&gt;B001-00000247&lt;/idDocument&gt;
+                &lt;status&gt;SIGNED&lt;/status&gt;
+                &lt;statusDocument&gt;EM_01&lt;/statusDocument&gt;
+                &lt;statusSunat&gt;PE_09&lt;/statusSunat&gt;
+                &lt;declareTime&gt;2025-07-19&lt;/declareTime&gt;
+                &lt;signatureValue&gt;denDkyZMqpJ/izuIcWPIaTJOcTxvEg2mFVA5Nmby145APyOZZ4qrKEiT5CXQryHV4Y7If9/AhEyL8RXEXeeb5N/YzDZBj/7G26M+l3NHyuouneJTlKwB2+VGlqogLNXYvWb1frsoCr+69wp9oBGj3afRvyarcTAoD06J4v5Toq+0kONIMZ6ey56B9zVnBW9dLrjQilalzmve/HgVKRhjA/h75tq947kEZ2z48VPjES4uij0U9KM6R8EfVEMBd4CNmEJgODRVU9GibYsFOPgI9t8Odug7fqtDbefej4wujB5CyMCNjTaLb1tpiXAZOslxq7ldxDKtgarxEy5nIsYqtA==&lt;/signatureValue&gt;
+                &lt;emisionTime&gt;2025-07-19&lt;/emisionTime&gt;
+                &lt;hashCode&gt;TEuUuF7BA9tmqOAlrCBjqV6qSQg=&lt;/hashCode&gt;
+                &lt;pdfFileUrl&gt;http://ec2-52-26-118-179.us-west-2.compute.amazonaws.com/files/x%275A556573616D42526B64706978454C4F42695069317638716B333262375746763346453158456E7A3136792B78384A796A38526D42652F7130415169666F7471%27&lt;/pdfFileUrl&gt;
+                &lt;xmlFileSignUrl&gt;http://ec2-52-26-118-179.us-west-2.compute.amazonaws.com/files/x%274F7372717353565334492B45384F394C536467385849674E2F7756796F4C52696A5743654D6E67624D33786B6E34736465564E45577359365057377249506958%27&lt;/xmlFileSignUrl&gt;
+                &lt;xmlFileSunatUrl&gt;http://ec2-52-26-118-179.us-west-2.compute.amazonaws.com/files/x%276B793753686B6F4B4E79376F6B714A4B4A43676C733346697A575839797A6E486E7A346F4E474A32547A504B65412B4562475A546E66786A2F637057754A2F7847447068333159495959513D%27&lt;/xmlFileSunatUrl&gt;
+                &lt;tipoDocumentoEmisor&gt;6&lt;/tipoDocumentoEmisor&gt;
+                &lt;numeroDocumentoEmisor&gt;20568216190&lt;/numeroDocumentoEmisor&gt;
+                &lt;tipoDocumentoAdquiriente&gt;1&lt;/tipoDocumentoAdquiriente&gt;
+                &lt;numeroDocumentoAdquiriente&gt;00000000&lt;/numeroDocumentoAdquiriente&gt;
+                &lt;adicionales xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+            &lt;/document&gt;
+        &lt;/xmlResult&gt;
+    &lt;/genericInvokeResponse&gt;
+&lt;/ebizResponse&gt;
+</return></ns2:invokeResponse></soapenv:Body></soapenv:Envelope>
+2025-07-19 22:36:26,900 - INFO - \u2705 XMLResponse actualizado correctamente en la base de datos.
+2025-07-19 22:36:28,016 - INFO - \u2705 Respuesta recibida del SOAP: <?xml version="1.0" encoding="utf-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"><soapenv:Body><ns2:invokeResponse xmlns:ns2="http://ws.ce.ebiz.com/"><return>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;ebizResponse&gt;
+    &lt;genericInvokeResponse&gt;
+        &lt;commonResponse&gt;
+            &lt;summaryResult/&gt;
+            &lt;status&gt;OK&lt;/status&gt;
+            &lt;descriptionStatus&gt;SUCCESFULL&lt;/descriptionStatus&gt;
+        &lt;/commonResponse&gt;
+        &lt;xmlResult&gt;
+            &lt;document&gt;
+                &lt;typeDocument&gt;03&lt;/typeDocument&gt;
+                &lt;idDocument&gt;B001-00000248&lt;/idDocument&gt;
+                &lt;status&gt;SIGNED&lt;/status&gt;
+                &lt;statusDocument&gt;EM_01&lt;/statusDocument&gt;
+                &lt;statusSunat&gt;PE_09&lt;/statusSunat&gt;
+                &lt;declareTime&gt;2025-07-19&lt;/declareTime&gt;
+                &lt;signatureValue&gt;mpIBsO8CqeJzlRO43aozeTD8RCcmAlKULHSkwK6Y51wQFn4LFcS57htGDWspZeVngzZRFsjcr2S1toAnu0dpUtzaNgfzaHYfm40Te4FOaFlUNQuZV5YeOwNZrQDAZBUk/14/eHQ0ui0m2QiTbumSqTtJA45f6Sal1FEqMXC9xUFo1FrkuLcy/UWdwrinXpKfAYntPqonG6TbNgd8VgzPlAJ0ZdxKrs2URgqrY4zWfqyvKeUr5gV4vevMt2tJCu2HVxl5bElDxFDMtedStsZ6o/bsL+KOdYCtrmFWa0DbJM6xyqLmB6cvfKNNn6vmWYOPFQq8+mcKagxQjRmVncKmDA==&lt;/signatureValue&gt;
+                &lt;emisionTime&gt;2025-07-19&lt;/emisionTime&gt;
+                &lt;hashCode&gt;0ML8If8uhIsearfBRKkDcHBm5xQ=&lt;/hashCode&gt;
+                &lt;pdfFileUrl&gt;http://ec2-52-26-118-179.us-west-2.compute.amazonaws.com/files/x%275A556573616D42526B64706978454C4F42695069317638716B333262375746763346453158456E7A31367A32596D756B742F64415249776A3673424F7A59574E%27&lt;/pdfFileUrl&gt;
+                &lt;xmlFileSignUrl&gt;http://ec2-52-26-118-179.us-west-2.compute.amazonaws.com/files/x%274F7372717353565334492B45384F394C536467385849674E2F7756796F4C52696A5743654D6E67624D33776647546E2B6A36763261325A4C5743593243485368%27&lt;/xmlFileSignUrl&gt;
+                &lt;xmlFileSunatUrl&gt;http://ec2-52-26-118-179.us-west-2.compute.amazonaws.com/files/x%276B793753686B6F4B4E79376F6B714A4B4A43676C733346697A575839797A6E486E7A346F4E474A32547A504B65412B4562475A546E583336554A774C344E6249436453723166764D7A55733D%27&lt;/xmlFileSunatUrl&gt;
+                &lt;tipoDocumentoEmisor&gt;6&lt;/tipoDocumentoEmisor&gt;
+                &lt;numeroDocumentoEmisor&gt;20568216190&lt;/numeroDocumentoEmisor&gt;
+                &lt;tipoDocumentoAdquiriente&gt;1&lt;/tipoDocumentoAdquiriente&gt;
+                &lt;numeroDocumentoAdquiriente&gt;00000000&lt;/numeroDocumentoAdquiriente&gt;
+                &lt;adicionales xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+            &lt;/document&gt;
+        &lt;/xmlResult&gt;
+    &lt;/genericInvokeResponse&gt;
+&lt;/ebizResponse&gt;
+</return></ns2:invokeResponse></soapenv:Body></soapenv:Envelope>
+2025-07-19 22:36:28,607 - INFO - \u2705 XMLResponse actualizado correctamente en la base de datos.
