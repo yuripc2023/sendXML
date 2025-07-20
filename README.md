@@ -8,3 +8,10 @@
  3.- 
 
  hola mundo!
+
+# Estando en D:\Scripts\sendXML o en la raiz del proyecto se corre lo siguiente en consola para instalar el servicio
+python send_xml_service.py install
+# Para iniciar el servicio
+python send_xml_service.py start
+# Otra forma de iniciar el servicio
+net start ServicioEnvioXML
