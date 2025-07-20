@@ -6,3 +6,5 @@
     SignedStatus    varchar(50)
  2.- Actualizar el archivo w_atila.dll de power builder
  3.- 
+
+ hola mundo!
