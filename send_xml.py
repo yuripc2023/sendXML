@@ -154,7 +154,7 @@ def get_pending_xmls_from_db():
 
     try:
         conn = pyodbc.connect(
-            f"DRIVER={{ODBC Driver 17 for SQL Server}};"
+            f"DRIVER={{ODBC Driver 11 for SQL Server}};"
             f"SERVER={SQL_SERVER};"
             f"DATABASE={SQL_DATABASE};"
             f"UID={SQL_USER};"
@@ -255,7 +255,7 @@ def update_response_in_db(ope_cod, eje_cod, mae_aso_cod, response_text):
 
     try:
         conn = pyodbc.connect(
-            f"DRIVER={{ODBC Driver 17 for SQL Server}};"
+            f"DRIVER={{ODBC Driver 11 for SQL Server}};"
             f"SERVER={SQL_SERVER};"
             f"DATABASE={SQL_DATABASE};"
             f"UID={SQL_USER};"
@@ -281,7 +281,7 @@ def update_response_in_db(ope_cod, eje_cod, mae_aso_cod, response_text):
 def test_conexion_sql():
     try:
         conn = pyodbc.connect(
-            f"DRIVER={{ODBC Driver 17 for SQL Server}};"
+            f"DRIVER={{ODBC Driver 11 for SQL Server}};"
             f"SERVER={SQL_SERVER};"
             f"DATABASE={SQL_DATABASE};"
             f"UID={SQL_USER};"

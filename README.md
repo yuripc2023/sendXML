@@ -31,7 +31,10 @@
         XMLToSend    VARCHAR(MAX),
         XMLResponse  VARCHAR(MAX),
         SignedStatus VARCHAR(50);
-    
+
+    Para validar si ya esta creado se corre lo siguiente en SQL:
+    >> select top 1 XMLToSend, XMLResponse, SignedStatus from MAEOPE
+
     En MAEFAC si es restaurante
     >>
     use DbLaBaseDeDatos    
@@ -40,6 +43,9 @@
         XMLToSend    VARCHAR(MAX),
         XMLResponse  VARCHAR(MAX),
         SignedStatus VARCHAR(50);
+    
+    Para validar si ya este creado se corre lo siguiente en SQL:
+    >> select top 1 XMLToSend, XMLResponse, SignedStatus from MAEFAC
 
 6.  Actualizar el archivo w_atila.dll de power builder
 
@@ -73,7 +79,6 @@
     SOAP_USER=XX
     SOAP_PASS=XX
 
-
 12. Para probar el servicio:
     >> python .\send_xml.py
 13. Tener cuidado con la version del driver de Microsoft SQL Server
@@ -88,9 +93,7 @@
     # Para iniciar el servicio
 15. Iniciamos el servio  
     python send_xml_service.py start
-    # Otra forma de iniciar el servicio
-    net start ServicioEnvioXML
-16. Otra forma de ver estado del servicio desde consola
+16. Ver el estado del servicio desde consola
     >> Get-Service -Name "ServicioEnvioXML"
 17. Matar el servicio, PID se extrae desde administrador de tareas/Servicios = ServicioEnvioXML
     taskkill /PID 15036 /F
