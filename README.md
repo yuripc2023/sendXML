@@ -61,18 +61,21 @@
 11. Copiamos o creamos el archivo .env con los siguientes parametros:
 
     # SQL Server
-    SQL_SERVER=server
-    SQL_DATABASE=database
-    SQL_USER=user
-    SQL_PASSWORD=password
-    Rubro=Tec   # Tec / Res
+    SQL_SERVER=XXX
+    SQL_DATABASE=XX
+    SQL_USER=XX
+    SQL_PASSWORD=XX
+    # Tec - Res
+    Rubro=RES
 
     # SOAP
     SOAP_WSDL=http://ec2-52-26-118-179.us-west-2.compute.amazonaws.com/invoker21?wsdl
-    SOAP_USER=user
-    SOAP_PASS=password
-12. Ppara probar el servicio:
-    >> python sendXML.py
+    SOAP_USER=XX
+    SOAP_PASS=XX
+
+
+12. Para probar el servicio:
+    >> python .\send_xml.py
 13. Tener cuidado con la version del driver de Microsoft SQL Server
     De preferencia usar:
     f"DRIVER={{ODBC Driver 11 for SQL Server}};"
