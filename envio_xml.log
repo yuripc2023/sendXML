@@ -1,51 +1,14 @@
-2025-07-20 14:16:05,183 - INFO - 🚀 send_xml.py ejecutado directamente (no como servicio).
-2025-07-20 14:16:05,575 - INFO - ✅ Conexión SQL Server exitosa. Fecha actual: 2025-07-20 14:16:05.990000
-2025-07-20 14:16:05,575 - INFO - 🟢 Servicio iniciando el bucle de búsqueda y envío de XMLs.
-2025-07-20 14:16:05,580 - INFO - 🗓️ No es necesario limpiar el log todavía. Próxima limpieza en 5 día(s).
-2025-07-20 14:16:15,580 - INFO - 🔍 Buscando XMLs pendientes...
-2025-07-20 14:16:15,664 - INFO - 📚 1 comprobante(s) pendiente(s) encontrado(s). Procesando...
-2025-07-20 14:16:15,664 - INFO - 📦 Procesando XML para OPECOD=161, EJECOD=2024, MAE_ASOCOD=0001
-2025-07-20 14:16:16,719 - INFO - ✅ Respuesta recibida del SOAP (Estado: 200): <?xml version="1.0" encoding="utf-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"><soapenv:Body><ns2:invokeResponse xmlns:ns2="http://ws.ce.ebiz.com/"><return>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
-&lt;ebizResponse&gt;
-    &lt;genericInvokeResponse&gt;
-        &lt;commonResponse&gt;
-            &lt;summaryResult/&gt;
-            &lt;status&gt;OK&lt;/status&gt;
-            &lt;descriptionStatus&gt;SUCCESFULL&lt;/descriptionStatus&gt;
-        &lt;/commonResponse&gt;
-        &lt;xmlResult&gt;
-            &lt;document&gt;
-                &lt;typeDocument&gt;03&lt;/typeDocument&gt;
-                &lt;idDocument&gt;B001-00000256&lt;/idDocument&gt;
-                &lt;status&gt;SIGNED&lt;/status&gt;
-                &lt;statusDocument&gt;EM_01&lt;/statusDocument&gt;
-                &lt;statusSunat&gt;PE_09&lt;/statusSunat&gt;
-                &lt;declareTime&gt;2025-07-20&lt;/declareTime&gt;
-                &lt;signatureValue&gt;varnXASSHU0vrejTDSBjFyMXAyEXMrF+I8XcrKAy6tFd5z0eGR+jA53I28nBkLOLDgCXvlL4VFjvkBRNuSfmMvtQ+6RJ03fjFGWm0JTAV5NeremVAkGK+D9/8vJxKnEwe9tAbpa5ZSBeRmT2DKa1DXyQ3H9RBv74/uiVLYMSXrs0567RzHAdIQAXadCxrtl21KmyxWTOx9nvfkESl3U7Y3gSKFsSMmyb/CWHrHcBH13/aQfAZ7OQAKtCG2qrnw0CPfvfpXto0skwoLGBfkF1N2BAf8pOYr/2LXRd0+b/prHQ9SXQajYOG7Z5dXBtwNhuA2JowHmspt5MvxyqLbnUnw==&lt;/signatureValue&gt;
-                &lt;emisionTime&gt;2025-07-20&lt;/emisionTime&gt;
-                &lt;hashCode&gt;1sVLCVWD4sOXUwaegwVShFdoqVg=&lt;/hashCode&gt;
-                &lt;pdfFileUrl&gt;http://ec2-52-26-118-179.us-west-2.compute.amazonaws.com/files/x%275A556573616D42526B64706978454C4F42695069317638716B333262375746763346453158456E7A3136776E532F624A70384A676A514C7056726D6241727051%27&lt;/pdfFileUrl&gt;
-                &lt;xmlFileSignUrl&gt;http://ec2-52-26-118-179.us-west-2.compute.amazonaws.com/files/x%274F7372717353565334492B45384F394C536467385849674E2F7756796F4C52696A5743654D6E67624D33792B2B4E685A357771574761356766654768744B6C67%27&lt;/xmlFileSignUrl&gt;
-                &lt;xmlFileSunatUrl&gt;http://ec2-52-26-118-179.us-west-2.compute.amazonaws.com/files/x%276B793753686B6F4B4E79376F6B714A4B4A43676C733346697A575839797A6E486E7A346F4E474A32547A504B65412B4562475A546E53554D4F5154643632556C5A785663675571554A6F513D%27&lt;/xmlFileSunatUrl&gt;
-                &lt;tipoDocumentoEmisor&gt;6&lt;/tipoDocumentoEmisor&gt;
-                &lt;numeroDocumentoEmisor&gt;20568216190&lt;/numeroDocumentoEmisor&gt;
-                &lt;tipoDocumentoAdquiriente&gt;1&lt;/tipoDocumentoAdquiriente&gt;
-                &lt;numeroDocumentoAdquiriente&gt;00000000&lt;/numeroDocumentoAdquiriente&gt;
-                &lt;adicionales xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
-            &lt;/document&gt;
-        &lt;/xmlResult&gt;
-    &lt;/genericInvokeResponse&gt;
-&lt;/ebizResponse&gt;
-</return></ns2:invokeResponse></soapenv:Body></soapenv:Envelope>
-2025-07-20 14:16:17,377 - INFO - ✅ XMLResponse y SignedStatus='SIGNED' actualizado para OPECOD=161, EJECOD=2024, MAE_ASOCOD=0001.
-2025-07-20 14:16:17,377 - INFO - ✅ Lote de comprobantes procesado. Preparando para el siguiente ciclo.
-2025-07-20 14:16:17,379 - INFO - 🗓️ No es necesario limpiar el log todavía. Próxima limpieza en 5 día(s).
-2025-07-20 14:16:27,380 - INFO - 🔍 Buscando XMLs pendientes...
-2025-07-20 14:16:27,466 - INFO - ⏸️ No hay comprobantes por enviar. Esperando el siguiente ciclo.
-2025-07-20 14:16:27,468 - INFO - 🗓️ No es necesario limpiar el log todavía. Próxima limpieza en 5 día(s).
-2025-07-20 14:16:37,469 - INFO - 🔍 Buscando XMLs pendientes...
-2025-07-20 14:16:37,545 - INFO - ⏸️ No hay comprobantes por enviar. Esperando el siguiente ciclo.
-2025-07-20 14:16:37,546 - INFO - 🗓️ No es necesario limpiar el log todavía. Próxima limpieza en 5 día(s).
-2025-07-20 14:16:47,547 - INFO - 🔍 Buscando XMLs pendientes...
-2025-07-20 14:16:47,624 - INFO - ⏸️ No hay comprobantes por enviar. Esperando el siguiente ciclo.
-2025-07-20 14:16:47,625 - INFO - 🗓️ No es necesario limpiar el log todavía. Próxima limpieza en 5 día(s).
+2025-07-26 09:10:45,120 - INFO - 🚀 send_xml.py ejecutado directamente (no como servicio).
+2025-07-26 09:10:45,120 - INFO - ATIC Perú
+2025-07-26 09:10:45,120 - INFO - ✨ Iniciando servicio send_xml.py - Versión: 1.0.0 ✨
+2025-07-26 09:10:45,188 - INFO - ✅ Conexión SQL Server exitosa a SERVER='DESKTOP-N6CAEOB\SQLEXPRESS', DATABASE='DbCasaBlanca'. Fecha actual: 2025-07-26 09:10:45.170000
+2025-07-26 09:10:45,188 - INFO - 🟢 Servicio iniciando el bucle de búsqueda y envío de XMLs para Rubro: 'RES'.
+2025-07-26 09:10:45,190 - INFO - 🗓️ No es necesario limpiar el log todavía. Próxima limpieza en 2 día(s).
+2025-07-26 09:10:55,191 - INFO - 🔍 Buscando XMLs pendientes...
+2025-07-26 09:10:55,210 - INFO - 🔍 Consulta de XMLs pendientes en tabla 'MAEFAC' completada.
+2025-07-26 09:10:55,210 - INFO - ⏸️ No hay comprobantes por enviar. Esperando el siguiente ciclo.
+2025-07-26 09:10:55,211 - INFO - 🗓️ No es necesario limpiar el log todavía. Próxima limpieza en 2 día(s).
+2025-07-26 09:11:05,211 - INFO - 🔍 Buscando XMLs pendientes...
+2025-07-26 09:11:05,226 - INFO - 🔍 Consulta de XMLs pendientes en tabla 'MAEFAC' completada.
+2025-07-26 09:11:05,226 - INFO - ⏸️ No hay comprobantes por enviar. Esperando el siguiente ciclo.
+2025-07-26 09:11:05,227 - INFO - 🗓️ No es necesario limpiar el log todavía. Próxima limpieza en 2 día(s).
