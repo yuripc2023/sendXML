@@ -47,7 +47,14 @@
     Para validar si ya este creado se corre lo siguiente en SQL:
     >> select top 1 XMLToSend, XMLResponse, SignedStatus from MAEFAC
 
-6.  Actualizar el archivo w_atila.dll de power builder
+6.  Actualizar los siguientes archivo generados de Power Builder:
+    Para tecnología:    
+        - w_atila.dll
+        - dw_rep_atila.dll
+
+    Para Restaurantes:  
+        - w_aticpp3.dll
+        - dw_rep_aticpp3.dll
 
 7.  Se ingresa a la unidad base según sea el caso desde consola
     >>C:
@@ -93,7 +100,7 @@
     # Para iniciar el servicio
 15. Iniciamos el servio  
     python send_xml_service.py start
-16. Ver el estado del servicio desde consola
+16. Ver el estado del servicio desde consola    
     >> Get-Service -Name "ServicioEnvioXML"
 17. Matar el servicio, PID se extrae desde administrador de tareas/Servicios = ServicioEnvioXML
     taskkill /PID 15036 /F
