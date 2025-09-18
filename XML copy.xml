@@ -12,31 +12,31 @@
 
 
 <SignOnLineCmd declare-sunat="1" declare-direct-sunat="1" publish="1" output="PDF">
-    <parameter value="20606612134" name="idEmisor" />
+    <parameter value="20612044733" name="idEmisor" />
     <parameter value="03" name="tipoDocumento" />
     <documento>
-        <serieNumero>B001-00018414</serieNumero>
+        <serieNumero>B001-00000007</serieNumero>
         <correoEmisor>-</correoEmisor>
         <correoAdquiriente>-</correoAdquiriente>
         <tipoDocumentoEmisor>6</tipoDocumentoEmisor>
-        <numeroDocumentoEmisor>20606612134</numeroDocumentoEmisor>
-        <razonSocialEmisor>LAVANDERIAS CLEAN WASH S.R.L.</razonSocialEmisor>
+        <numeroDocumentoEmisor>20612044733</numeroDocumentoEmisor>
+        <razonSocialEmisor>ALIMENTOS Y LOGISTICA SIERRA PERU E.I.R.L</razonSocialEmisor>
         <tipoDocumento>03</tipoDocumento>
         <fechaEmision>2025-08-21</fechaEmision>
         <paisPrestacionServicio>PE</paisPrestacionServicio>
         <tipoOperacion>0101</tipoOperacion>
-        <ubigeoEmisor>120101</ubigeoEmisor>
-        <direccionEmisor>JR. AMAZONAS 461 - HUANCAYO - HUANCAYO - JUNÍN</direccionEmisor>
+        <ubigeoEmisor>120100</ubigeoEmisor>
+        <direccionEmisor>JR. PUNO N° 250 - HUANCAYO - HUANCAYO - JUNÍN</direccionEmisor>
         <urbanizacion>-</urbanizacion>
         <provinciaEmisor>HUANCAYO </provinciaEmisor>
         <departamentoEmisor>JUNÍN</departamentoEmisor>
-        <distritoEmisor>HUANCAYO</distritoEmisor>
+        <distritoEmisor>HUANCAYO </distritoEmisor>
         <paisEmisor>PE</paisEmisor>
         <tipoDocumentoAdquiriente>1</tipoDocumentoAdquiriente>
         <numeroDocumentoAdquiriente>00000000</numeroDocumentoAdquiriente>
         <razonSocialAdquiriente>CLIENTE EVENTUAL</razonSocialAdquiriente>
         <codigoLocalAnexoEmisor>0000</codigoLocalAnexoEmisor>
-        <horaEmision>19:57:15</horaEmision>
+        <horaEmision>20:40:58</horaEmision>
         <totalVenta>2.00</totalVenta>
         <textoLeyenda_1>DOS CON 00/100 SOLES</textoLeyenda_1>
         <codigoLeyenda_1>1000</codigoLeyenda_1>
@@ -59,12 +59,12 @@
         <item>
             <indicador>D</indicador>
             <numeroOrdenItem>1</numeroOrdenItem>
-            <codigoProducto>1348</codigoProducto>
+            <codigoProducto>0</codigoProducto>
             <codigoProductoSUNAT>84000000</codigoProductoSUNAT>
-            <descripcion>UNI - BIBIRI - AL SECO</descripcion>
+            <descripcion>AZUCAR SPLENDA UNI SOBRE DE STEVIA X 1 GR</descripcion>
             <cantidad>1.00</cantidad>
             <unidadMedida>NIU</unidadMedida>
-            <importeUnitarioSinImpuesto>1.69</importeUnitarioSinImpuesto>
+            <importeUnitarioSinImpuesto>1.694915</importeUnitarioSinImpuesto>
             <importeUnitarioConImpuesto>2.00</importeUnitarioConImpuesto>
             <codigoImporteUnitarioConImpuesto>01</codigoImporteUnitarioConImpuesto>
             <importeTotalSinImpuesto>1.69</importeTotalSinImpuesto>

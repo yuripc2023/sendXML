@@ -164,7 +164,7 @@ def get_pending_xmls_from_db():
         query = f"""
             SELECT OPECOD, EJECOD, MAE_ASOCOD, XMLToSend
             FROM {table_name}
-            WHERE XMLToSend IS NOT NULL AND XMLResponse IS NULL
+            WHERE XMLToSend IS NOT NULL AND XMLResponse IS NULL and DOCCOD <> 'NV'
         """
         cursor.execute(query)
         results = cursor.fetchall()
